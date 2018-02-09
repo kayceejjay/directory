@@ -2,16 +2,31 @@ class UsersController < ApplicationController
   
   def show
     @user = User.find(params[:id])
+  end  
+  
+  def index
+    @user = User.all
+    
+    # users = User.all.each do |user|
+      # @user = user.id
+      # login_url(user)
+      # self.show
+      # @user = user.id
+      # User.find(params[:id])
+   # end
+   
   end
+  
+ 
 
   def new
     @user = User.new
-    
   end
   
   def create
     @user = User.new(user_params)    # Not the final implementation!
     if @user.save
+      log_in @user
       flash[:success] = "Welcome to the Sample App!"
       redirect_to @user
     else
