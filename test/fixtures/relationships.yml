@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+# Commented out to adhere to the uniqueness constrain and allow the test to past
+one:
+  follower: michael
+  followed: lana
+
+two:
+  follower: michael
+  followed: malory
+
+three:
+  follower: lana
+  followed: michael
+
+four:
+  follower: archer
+  followed: michael

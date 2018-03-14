@@ -45,5 +45,19 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to root_url # logged in but not admin to Home page
   end
 
+  test "should redirect following when not logged in" do
+    get following_user_path(@user)
+    assert_not is_logged_in?
+    assert_redirected_to login_url
+    follow_redirect!
+  end
+
+  test "should redirect followers when not logged in" do
+    get followers_user_path(@user)
+    assert_not is_logged_in?
+    assert_redirected_to login_url
+    follow_redirect!
+  end
+
 
 end
