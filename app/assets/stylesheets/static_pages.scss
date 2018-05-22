@@ -1,8 +1,96 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+/* Variables */
+$charcoal: #222;
+$shale: #404040;
+$morning_mist: #f0f0f5;
+
+.welcome {
+  margin: 50px 0 0 70px;
+  font-family: Arial Rounded MT;
+  color: $shale;
+  text-align: center;
+}
+
+.col-4 {
+  margin-top: 20px;
+  max-width: 100%;
+  margin-left: 5%;
+  margin-right: 35%;
+  font-family: Arvo;
+  font-size: 1em;
+  color: RGB(64,64,68);
+}
+
+/* ul.sparkle {
+    list-style-image: url('/images/sparkler on black-84715_thumb2.png');
+} */
+
+ul {
+  margin: 0px 0px 0px 10px;
+}
+
+#word {
+  max-width: 100%;
+  margin-left: 5%;
+  margin-right: 80%;
+  margin-bottom: 10px;
+  font-size: 2.75em;
+  color: $shale;
+}
+
+.col-4 p {
+  margin-top: 7px;
+  margin-left: 40px;
+  font-family: Arial;
+  font-style: italic;
+  font-size: 0.75em;
+}
+
+#app_name {
+  margin: 60px 175px 20px 20px;
+  font-family: Arial Rounded MT;
+  font-size: 3em;
+  font-weight: bold;
+  color: $shale;
+  text-align: center;
+}
+
+.col-8 {
+ max-width: 100%;
+ margin-left: 20%;
+ text-align: center;
+ color: $shale;
+ 
+}
+
+#explain {
+ font-family: Roboto, Helevetica;
+ font-size: 1.25em;
+ text-align: justify;
+}
+
+.col-8 p {
+ font-size: 1.25em;
+   /*text-align: center;*/
+}
+
+#signup {
+  margin-top: 50px;
+  text-align: center;
+}
+
+/* .btn {
+  border: $charcoal;
+  background-color: $shale;
+  color: $morning_mist;
+} */
+
 .button {
-    background-color: #0000ff; /* Blue */
+    background-color: #b4b4b4; /* light Grey */
     border: none;
     color: #ffffff;
     padding: 10px 22px;
@@ -11,4 +99,28 @@
     display: inline-block;
     font-size: 14px;
     border-radius: 12px; /* rounded button edges */
+}
+
+.business_checkbox {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  span {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-weight: normal;
+    text-align: left;
+  }
+}
+
+
+/* About */
+#about-subtitle1, #about-subtitle2 {
+  font-family: Do Hyeon, Geneva;
+  font-size: 1.5em;
+  color: $charcoal;
+}
+
+#about-subtitle2 {
+  font-family: Do Hyeon, Geneva;
+  color: $charcoal;
 }

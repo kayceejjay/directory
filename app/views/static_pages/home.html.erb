@@ -4,7 +4,7 @@
       <section class="user_info">
         <%= render 'shared/user_info' %>
       </section>
-      <section class="stats">  <!-- incorporate fllowing & followers stats on the page -->
+      <section class="stats">  <!-- incorporate following & followers stats on the page -->
         <%= render 'shared/stats' %>
       </section>
       <section class="micropost_form">
@@ -18,18 +18,17 @@
   </div>
 <% else %>
   <div class="center jumbotron">
-    <h1>Welcome to the Sample App</h1>
+    <h1 id="jumbo-header"><a href="http://www.affinitydirect.biz">Affinity Direct</a></h1>
   
     <h2>
-      This is the home page for the
-      <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
-      sample application.
+      <p align="justify">is a community of consumers touting the things they like in their communities; the things you find yourself drawn to in your community, i.e. establishments or services that you have or will use again and again, because they have had an impact on you, and you want others to share in that experience.</p>
+      <p>Like attracts like.    What do you have an affinity for?!   Drop a good word.  It's simple.</p>
     </h2>
   
     <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
     
   </div>
   
-    <%= link_to image_tag("rails.png", alt: "Rails logo"),
-              'http://rubyonrails.org/' %>
+    <%= link_to image_tag("sparkler on black-84715_thumb2.png", alt: "Affinity Direct logo"),
+              'http://www.affinitydirect.biz' %>
 <% end %>

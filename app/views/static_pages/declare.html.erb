@@ -1,0 +1,10 @@
+<% provide(:title, 'Declaration') %>
+<% provide(:button_text, 'Take me to correct sign up') %>
+<h1>Sign up</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= check_box(consumer_declaration, :declare, options = {}, checked_value = true, unchecked_value = false) %>
+    <%= check_box(rep_declaration, :declare, options = {}, checked_value = true, unchecked_value = false) %>
+  </div>
+</div>

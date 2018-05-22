@@ -4,6 +4,8 @@
 /* variables */
 
 $charcoal: #222;
+$shale: #404040;
+$morning-mist: #f0f0f5;
 $grey: #555;
 $medium-light-grey: #eaeaea;
 $white: #fff;
@@ -27,6 +29,8 @@ $white: #fff;
 /* universal */
 
 body {
+ /* Other possible background colors #f0f0f5, #e0e0eb, #b3b3cc */
+  background-color: #d1d1e0;
   padding-top: 60px;
 }
 
@@ -39,9 +43,21 @@ textarea {
 }
 
 .center {
+  /* background-color: #f2f2f2; */
+  background-image: url("city-3142620_1920.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.4;
   text-align: center;
+  color: black;
   h1 {
   margin-bottom: 10px;
+  }
+  &:hover {
+    opacity: 1.0;
+    h2 p {
+      color: black;
+    }
   }
 }
 
@@ -57,10 +73,39 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
+  font-family: Arial Rounded MT;
   font-size: 3em;
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
+}
+
+#jumbo-header {
+  font-family: Arial Rounded MT;
+  font-size: 2.5em;
+  a {
+    color: black;
+    font-style: bold;
+    background-color: transparent;
+    text-decoration: none;
+    
+    &:hover {
+      color: SlateBlue;
+    }
+    
+  }
+}
+
+.btn {
+    background-color: $charcoal;
+    border: none;
+    color: #ffffff;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 12px; /* rounded button edges */
 }
 
 h2 {
@@ -124,7 +169,7 @@ footer {
     }
   }
   
-} /* footer */
+} /* footer end */
 
 /* sidebar */
 

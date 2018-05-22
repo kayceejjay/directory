@@ -1,0 +1,27 @@
+<%= stylesheet_link_tag 'static_pages' %><!--use static_pages.css to style this view-->
+
+<div class="welcome">
+  <h1>Welcome!</h1>
+</div><!--welcome-->  
+<div class="main">
+  <div class="container">
+    <div class="row1">
+      <div class="col-4">
+        <h1 id="word">Affinity</h1>
+          <ul>
+            <li>an attraction or liking for something</li>
+            <li>sympathy marked by community of interest: kinship</li>
+          </ul>
+          <p>-- courtesy of Merriam Webster Dictionary</p>
+      </div><!--col4-->
+    </div><!--row1-->
+    <div class="row2">
+      <div class="col-8">
+        <h1 id="app_name">Affinity Direct</h1>
+        <p id="explain" class="text-justify">is a community of consumers touting the things they like in their communities; the things you find yourself drawn to in your community, i.e. establishments or services that you have or will use again and again, because they have had an impact on you, and you want others to share in that experience.</p>
+        <p class="text-center">Like attracts like.    What do you have an affinity for?!   Drop a good word.  It's simple.</p>
+      </div><!--col8-->
+      <p id="signup"><%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %></p>
+    </div><!--row2-->
+  </div><!--container-->
+</div><!--main-->

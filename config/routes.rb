@@ -3,8 +3,12 @@ Rails.application.routes.draw do
   get 'password_resets/new'
 
   get 'password_resets/edit'
+  
+  get '/home', to: 'static_pages#home'
 
-  root 'static_pages#home'
+  root 'static_pages#index'
+  
+  get '/index', to: 'static_pages#index', as: 'root_welcome'
   
   get '/static_pages', to: 'static_pages#home'
   
