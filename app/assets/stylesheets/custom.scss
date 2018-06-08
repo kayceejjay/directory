@@ -3,12 +3,15 @@
 
 /* variables */
 
-$charcoal: #222;
-$shale: #404040;
-$morning-mist: #f0f0f5;
-$grey: #555;
-$medium-light-grey: #eaeaea;
-$white: #fff;
+$white: #ffffff;
+$morning-mist: #f0f0f5; /* light blueish gray */
+$lighter-grey: #eeeeee; /* Bootstrap grayLighter */
+$light-grey: #cccccc;
+$medium-light-grey: #999999; /* Bootstrap grayLight */
+$grey: #555555; /* Bootstrap gray */
+$shale: #404040; /* similar to Bootstrap grayDark */
+$charcoal: #222222; /* Bootstrap grayDarker */
+
 
 @mixin box_sizing {
   -moz-box-sizing:    border-box;
@@ -73,7 +76,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-family: Arial Rounded MT;
+  font-family: Arial Rounded MT, Gadget, sans-serif;
   font-size: 3em;
   letter-spacing: -2px;
   margin-bottom: 30px;
@@ -81,11 +84,11 @@ h1 {
 }
 
 #jumbo-header {
-  font-family: Arial Rounded MT;
+  font-family: Arial Rounded MT, Gadget, sans-serif;
   font-size: 2.5em;
   a {
     color: black;
-    font-style: bold;
+    font-weight: bold;
     background-color: transparent;
     text-decoration: none;
     
@@ -114,7 +117,7 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: $gray-light;
+  color: $medium-light-grey;
 }
 
 p {
@@ -144,8 +147,8 @@ p {
 footer {
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid $medium-light-grey;
-  color: $gray-light;
+  border-top: 1px solid $light-grey;
+  color: $medium-light-grey;
   
   small {
     float: left;
@@ -165,7 +168,7 @@ footer {
     color: $grey;
   
     &:hover {
-    color: #charcoal;
+    color: $charcoal;
     }
   }
   
@@ -184,17 +187,38 @@ aside {
       border: 0;
       padding-top: 0;
     }
+    
+    .button {
+    background-color: $charcoal;
+    color: white;
+    font-size: 1em;
+    padding: 4px 2px;
+    width: 40px;
+    border-radius: 10px;
+    }
+
+    .field {
+      margin-top: 25px;  
+    }
+    
     span {
       display: block;
       margin-bottom: 3px;
       line-height: 1;
     }
+
+    #upload-caption {
+      font-style: italic;
+      text-align: left;
+      margin-top: -20px;
+    }
+    
     h1 {
       font-size: 1.4em;
       text-align: left;
       letter-spacing: -1px;
       margin-bottom: 3px;
-      margin-top: 0px;
+      margin-top: 0;
     }
   }
 }
@@ -215,7 +239,7 @@ aside {
   a {
     float: left;
     padding: 0 10px;
-    border-left: 1px solid $gray-lighter;
+    border-left: 1px solid $medium-light-grey;
     color: gray;
     &:first-child {
       padding-left: 0;
@@ -260,7 +284,7 @@ input {
 }
 
 .checkbox {
-  margin-top: -10px;
+  margin-top: 10px; /* from -10px */
   margin-bottom: 10px;
   span {
     margin-left: 20px;
@@ -281,7 +305,7 @@ input {
   li {
     overflow: auto;
     padding: 10px 0;
-    border-bottom: 1px solid $gray-lighter;
+    border-bottom: 1px solid $light-grey;
   }
 }
 
@@ -307,7 +331,7 @@ input {
     }
   }
   .timestamp {
-    color: $gray-light;
+    color: $medium-light-grey;
     display: block;
     margin-left: 60px;
   }

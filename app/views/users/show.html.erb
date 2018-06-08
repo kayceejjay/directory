@@ -9,6 +9,18 @@
     </section>
         <section class="stats">
       <%= render 'shared/stats' %>
+  
+    <div class="field">
+      <%= form_for(:micropost, url: microposts_path) do |f| %>
+      <%= f.text_area :content, placeholder: "Compose new micropost..." %>
+    </div>
+    <%= f.submit "Post", class: "button" %>
+    <span class="picture">
+      <%= f.file_field :picture, accept: 'image/jpeg,image/gif,image/png' %>
+    </span>
+    <p id= "upload-caption">Upload a pic ...</p>
+    <% end %>
+
     </section>
   </aside>
    <div class="col-md-8">
@@ -21,4 +33,4 @@
       <%= will_paginate @microposts %>
     <% end %>
   </div>
-</div>
+</div>  

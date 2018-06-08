@@ -4,13 +4,13 @@
 
 
 /* Variables */
-$charcoal: #222;
+$charcoal: #222222;
 $shale: #404040;
 $morning_mist: #f0f0f5;
 
 .welcome {
   margin: 50px 0 0 70px;
-  font-family: Arial Rounded MT;
+  font-family: Arial Rounded MT, Gadget, sans-serif;
   color: $shale;
   text-align: center;
 }
@@ -20,7 +20,7 @@ $morning_mist: #f0f0f5;
   max-width: 100%;
   margin-left: 5%;
   margin-right: 35%;
-  font-family: Arvo;
+  font-family: Arvo, Geneva, sans-serif;
   font-size: 1em;
   color: RGB(64,64,68);
 }
@@ -30,7 +30,7 @@ $morning_mist: #f0f0f5;
 } */
 
 ul {
-  margin: 0px 0px 0px 10px;
+  margin: 0 0 0 10px;
 }
 
 #word {
@@ -45,14 +45,14 @@ ul {
 .col-4 p {
   margin-top: 7px;
   margin-left: 40px;
-  font-family: Arial;
+  font-family: Arial, Helevetica, sans-serif;
   font-style: italic;
   font-size: 0.75em;
 }
 
 #app_name {
   margin: 60px 175px 20px 20px;
-  font-family: Arial Rounded MT;
+  font-family: Arial Rounded MT, Helevetica, sans-serif;
   font-size: 3em;
   font-weight: bold;
   color: $shale;
@@ -68,7 +68,7 @@ ul {
 }
 
 #explain {
- font-family: Roboto, Helevetica;
+ font-family: Roboto, Helevetica, sans-serif;
  font-size: 1.25em;
  text-align: justify;
 }
@@ -115,12 +115,12 @@ ul {
 
 /* About */
 #about-subtitle1, #about-subtitle2 {
-  font-family: Do Hyeon, Geneva;
+  font-family: Do Hyeon, Geneva, sans-serif;
   font-size: 1.5em;
   color: $charcoal;
 }
 
 #about-subtitle2 {
-  font-family: Do Hyeon, Geneva;
+  font-family: Do Hyeon, Geneva, sans-serif;
   color: $charcoal;
 }
